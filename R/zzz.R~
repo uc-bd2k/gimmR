@@ -1,0 +1,30 @@
+#.GimmPath <- paste(.Library, "/gimmR/doc/", sep="")
+#.GimmPath <- NA
+#.PosthocPath<-NA
+#print(.Library)
+#print(.GimmPath)
+
+#".PosthocPath" <- paste(.Library, "/gimmR/doc/", sep="")
+
+
+#.First.lib <- function(lib, pkg) {
+.onLoad <- function(lib, pkg) {
+     .GimmPath <- paste(.Library, "/gimmR/doc/", sep="")
+     assign(".GimmPath",paste(.Library, "/gimmR/doc/", sep=""),envir=sys.frame())
+     assign(".PosthocPath",paste(.Library, "/gimmR/doc/", sep=""),envir=sys.frame())
+#     assign(".GeneDataTable",NULL,envir=sys.frame())
+#     export(.GimmPath)
+print(sys.frame())
+#cat(".First.Lib call\n",.GimmPath,"\n")
+#     .PosthocPath <- paste(.Library, "/gimmR/doc/", sep="")
+}
+#.onLoad <- function(lib, pkg) {
+#     .GimmPath <- paste(.Library, "/gimmR/doc/", sep="")
+#cat(".First.Lib call\n",.GimmPath)
+#.PosthocPath <- paste(.Library, "/gimmR/doc/", sep="")
+#}
+#.onAttach <- function(lib, pkg) {
+#     .GimmPath <- paste(.Library, "/gimmR/doc/", sep="")
+#cat(".First.Lib call\n",.GimmPath)
+#     .PosthocPath <- paste(.Library, "/gimmR/doc/", sep="")
+#}

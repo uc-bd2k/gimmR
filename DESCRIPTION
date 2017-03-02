@@ -1,0 +1,13 @@
+Package: gimmR
+Type: Package
+Title: This package was built to cluster gene expression data using
+			 the Gaussian Infinite Mixture Model.
+Version:  4.0
+Date: 04-13-2010
+Author: Mario Medvedovic, Johannes Freudenberg, Vinayak Kumar
+Maintainer: Mario Medvedovic <Mario.Medvedovic@uc.edu>
+Description: This package serves as a wrapper for using  gimm package implementing the Gaussian Infinite Mixture Model for clustering gene expression data. The gimm package is implemented in C and can be compiled and installed separately. gimmR comes with generic executables compiled with gcc. The package produces the hclust object as well as .CDT and .GTR files, defining hierarchical clustering based on the posterior pairwise probabilities of co-expression calculated by fitting the Bayesian infinite mixture model. Updates and other info are available at http://eh3.uc.edu/gimm.
+biocViews: Microarray, OneChannel, Preprocessing
+License: GNU 
+Suggests: marray
+Packaged: 3-23-2016; mario

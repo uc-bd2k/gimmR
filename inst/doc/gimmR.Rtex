@@ -1,0 +1,48 @@
+%\VignetteIndexEntry{GimmR Vignette}
+%\VignetteDepends{}
+%\VignetteKeywords{Bayesian Clusttering Algorithm}
+%\VignettePackage{gimmR}
+\documentclass[12pt]{article}
+\usepackage{Sweave}
+
+\textwidth=6.2in
+\textheight=8.5in
+\oddsidemargin=0.2in
+\evensidemargin=0.2in
+\headheight=0in
+\headsep=0in
+
+\begin{document}
+\title{GimmR Package Vignette}
+\author{Mario Medvedovic, Vinayak Kumar}
+\date{28 June 2006}
+\maketitle
+
+GimmR implements Bayesian Infinite Mixtures Clustering procedure described in (Medvedovic et. al.2004, Medvedovic	and Guo 2004, Medvedovic and Sivaganesan 2002).
+
+It takes few parameters as inputs and runs  Gibbs sampler and posthoc-analysis program. 
+ 
+The full GimmR User's Guide is available as part of the online documentation.
+To reach the User's Guide you need to install the gimmR package.
+
+To access this guide in Linux, you can type
+
+\begin{Schunk}
+\begin{Sinput}
+> library(gimmR)
+\end{Sinput}
+\end{Schunk}
+or alternatively
+\begin{Schunk}
+\begin{Sinput}
+> help.start()
+\end{Sinput}
+\end{Schunk}
+and follow the links to the gimmR package help.
+
+\end{document}
+
+
+
+
+
